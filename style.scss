@@ -1,5 +1,9 @@
 @import "_variables.scss";
-@import "_myBtn.scss";
+@import "_btn.scss";
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
 
 .container {
   display: flex;
