@@ -1,1 +1,60 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: lowercase;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  background-color: pink;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border-radius: 5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn-pink {
+  background-color: pink;
+  color: white;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.111);
+          transform: scale(1.111);
+  -webkit-box-shadow: 0 10px 0.5rem palevioletred;
+          box-shadow: 0 10px 0.5rem palevioletred;
+}
+
+.btn::after {
+  content: "";
+  display: inline;
+  height: 100%;
+  width: 100%;
+  border-radius: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3%;
+  transition: all 0.3%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 2rem auto;
+  width: 80vw;
+  font-size: 1.5rem;
+  padding: 1 rem;
+}
+/*# sourceMappingURL=style.css.map */
