@@ -1,0 +1,14 @@
+@import "_variables.scss";
+@import "_myBtn.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 2rem auto;
+  width: 80vw;
+  font-size: 1.5rem;
+  padding: 1 rem;
+}
