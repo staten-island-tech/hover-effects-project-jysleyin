@@ -1,0 +1,46 @@
+@import "_variables.scss";
+
+.bunny-parent {
+  width: 60rem;
+  height: 40rem;
+}
+
+.bunny-gallery {
+  margin: 3rem;
+  position: relative;
+}
+
+.bunny-photo {
+  position: absolute;
+  height: 20rem;
+  box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+  outline-offset: 1rem;
+}
+
+.bunny-photo:hover {
+  transform: scale(1.3);
+  box-shadow: 0 3rem 1rem rgba(0, 0, 0, 0.5);
+  outline: 1rem dashed color(brown);
+  z-index: 2;
+}
+
+.bunny-gallery:hover .bunny-photo:not(:hover) {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.bunny-photo-1 {
+  top: 14rem;
+  left: 27%;
+}
+
+.bunny-photo-2 {
+  top: 0rem;
+  right: 4%;
+}
+
+.bunny-photo-3 {
+  top: -2rem;
+  left: 13%;
+}
