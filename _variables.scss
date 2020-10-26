@@ -1,5 +1,17 @@
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 $colors: (
-  pink: #e91e63,
+  melodypink: #e91e63,
   white: #fce4ec,
   brown: #8d6e63,
 );
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
