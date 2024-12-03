@@ -1,0 +1,15 @@
+@import "_variables.scss";
+
+.text-effects {
+  background-image: url("./media/flowers.jpeg");
+  background-position: center;
+  color: transparent;
+  font-size: 8rem;
+  -webkit-background-clip: text;
+  transition: all 0.3s;
+}
+
+.text-effects:hover {
+  transform: skewY(-10deg);
+  letter-spacing: 3rem;
+}
